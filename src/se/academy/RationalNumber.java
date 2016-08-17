@@ -134,4 +134,8 @@ public class RationalNumber {
         return simplify(new RationalNumber(a,b));
 
     }
+
+    public boolean equal (RationalNumber rat) {
+        return this.getNumerator()*rat.getDenominator() == this.getDenominator()*rat.getNumerator();
+    }
 }
